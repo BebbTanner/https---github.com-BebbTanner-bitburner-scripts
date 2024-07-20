@@ -24,8 +24,14 @@ export async function main(ns){
     */
     var virusRam = ns.getScriptRam(virus);
 
+    /*
+    I setup the funcution the way that it is presented.
+    But it is throwing errors and I do not know why.
+     */
     function getNumCracks(){
-        
+        return Object.keys(cracks).filter(funciton(file){
+            return ns.fileExists(file, homeServer);
+        }).length;
     }
 
 }
