@@ -1,3 +1,4 @@
+//Currently, I am not too sure as to what all of this does. I am learning it as I go.
 export async function main(ns){
     //This is setting up the specified target.
     var target = ns.args[0];
@@ -11,5 +12,20 @@ export async function main(ns){
         'HTTPWorm.exe': ns.httpworm,
         'SQLInject.exe': ns.sqlinject
     };
+
+    /*
+    This is the virus variable that will deploy the 
+    gimmime money script that I programmed earlier.
+    */
+    var virus = "gimmie-money.js"
+    /*
+    This variable is going to get the avaible ram
+    for the virus variable that is defined up above.
+    */
+    var virusRam = ns.getScriptRam(virus);
+
+    function getNumCracks(){
+        
+    }
 
 }
